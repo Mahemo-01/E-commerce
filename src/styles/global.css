@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter';
 }
 
 :root {
@@ -16,6 +15,7 @@
   --pink-color: #ff6c84;
   --purple-color: #5E60CE;
 
+  --grey-color:   #c3c3c3;
   /* --yellow-color:   #ffc107; */
   /* --orange-color:   #ff7f07; */
 
@@ -26,17 +26,30 @@ body {
   min-height: 100vh;
   background-color: var(--light-color);
   color: var(--dark-color);
+  font-family: 'Inter';
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
+section{
+  padding-top: 10vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 input {
   outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 button {
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }

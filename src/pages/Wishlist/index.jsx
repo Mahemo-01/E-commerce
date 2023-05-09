@@ -1,10 +1,10 @@
 // import styles from './home.module.css'
 
-export function Account() {
+export function Wishlist() {
 
   return (
     <>
-      <div>account</div>
+      <div>My Wishlist</div>
     </>
   )
 }

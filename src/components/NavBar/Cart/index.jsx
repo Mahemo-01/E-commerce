@@ -6,7 +6,7 @@ import { MyCart } from '../../../pages/MyCart'
 export function Cart() {
   return (
     <button>
-      <Link to='/cart' element={<MyCart />}>
+      <Link to='/myCart'>
         <BsFillBagFill></BsFillBagFill>
       </Link>
     </button>

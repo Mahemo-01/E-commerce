@@ -1,4 +1,4 @@
-export function Login() {
+export function CreateAccount() {
   // const handleSubmit = (e) => {
   //   e.preventDefault()
   //   dispatch(authActions.login())
@@ -6,7 +6,8 @@ export function Login() {
 
   return (
     <>
-      <section className='login'>
+      <section>
+        Account
         {/* <div className='container'>
           <div className='backImg'>
             <img src={back} alt='' />

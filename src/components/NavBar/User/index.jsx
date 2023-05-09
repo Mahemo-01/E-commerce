@@ -1,10 +1,12 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './user.module.css'
-import { useState } from 'react'
+
+import { Account } from '../../../pages/Account'
+
 import { FaUserCircle } from 'react-icons/fa'
 import { BsBagCheck, BsHeart } from 'react-icons/bs'
 import { IoLogOutOutline, IoHelpOutline, IoSettingsOutline } from 'react-icons/io5'
-// import { AiFillHeart } from 'react-icons/ai'
 
 export function User() {
 

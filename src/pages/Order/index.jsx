@@ -1,10 +1,10 @@
 // import styles from './home.module.css'
 
-export function Account() {
+export function Order() {
 
   return (
     <>
-      <div>account</div>
+      <div>My Order</div>
     </>
   )
 }

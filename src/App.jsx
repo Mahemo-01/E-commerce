@@ -1,28 +1,41 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
+import { Store } from './store/store'
+
 import { Home } from './pages/Home'
-import { Navbar } from './components/NavBar'
 import { MyCart } from './pages/MyCart'
-import { Footer } from './components/Footer'
-
-
+import { Account } from './pages/Account'
+import { Order } from './pages/Order'
+import { Wishlist } from './pages/Wishlist'
+import { Layout } from './layout'
+import { CreateAccount } from './pages/Create Account'
 
 function App() {
+  // const store = useAppContext()
+
+  // console.log(store.users)
   return (
     <>
-      <BrowserRouter>
+      <Store>
+        {/* {store.users ? <div>hola</div> : <div>adios</div>} */}
 
-        <Navbar></Navbar>
+        <BrowserRouter>
 
-        <section>
           <Routes>
-            <Route path='/' element={<Home />}></Route>
-            <Route path='/cart' element={<MyCart />}></Route>
+
+            <Route path='/CreateAccount' element={<CreateAccount />}></Route>
+
+            <Route element={<Layout />}>
+              <Route path='/' element={<Home />}></Route>
+              <Route path='/myCart' element={<MyCart />}></Route>
+              <Route path='/myAccount' element={<Account />}></Route>
+              <Route path='/myOrder' element={<Order />}></Route>
+              <Route path='/myWishlist' element={<Wishlist />}></Route>
+            </Route>
+
           </Routes>
-        </section>
-        <Footer></Footer>
 
-
-      </BrowserRouter>
+        </BrowserRouter>
+      </Store>
     </>
   )
 }

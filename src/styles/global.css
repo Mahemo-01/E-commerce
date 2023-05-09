@@ -8,18 +8,21 @@
   --white-color: #ffffff;
   --light-color: #f0f3f5;
   --black-color: #191919;
-  /* --dark-color:  #343a40; */
   --dark-color: #262626;
+  --grey-color:   #c3c3c3;
+  
+  /* --dark-color:  #343a40; */
+
 
   --red-color: #dc3848;
   --pink-color: #ff6c84;
   --purple-color: #5E60CE;
+  --blue-color: #67aefa;
+  --lightblue-color: #b3dcd9;
 
-  --grey-color:   #c3c3c3;
   /* --yellow-color:   #ffc107; */
   /* --orange-color:   #ff7f07; */
 
-  --blue-color: #67aefa;
 }
 
 body {
@@ -31,10 +34,6 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
-}
-
-section{
-  padding-top: 10vh;
 }
 
 a {

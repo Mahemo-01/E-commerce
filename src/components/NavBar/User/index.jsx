@@ -2,8 +2,6 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './user.module.css'
 
-import { Account } from '../../../pages/Account'
-
 import { FaUserCircle } from 'react-icons/fa'
 import { BsBagCheck, BsHeart } from 'react-icons/bs'
 import { IoLogOutOutline, IoHelpOutline, IoSettingsOutline } from 'react-icons/io5'
@@ -68,7 +66,8 @@ export function User() {
             </button>
           </Link>
 
-          <Link to='/myAccount'>
+          {/* <Link to='/myAccount'> */}
+          <Link to='/CreateAccount'>
             <button className={styles.box} onClick={logoutHandler}>
               <IoLogOutOutline />
               <span>Log Out</span>

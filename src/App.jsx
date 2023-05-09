@@ -21,7 +21,6 @@ function App() {
         <BrowserRouter>
 
           <Routes>
-
             <Route path='/CreateAccount' element={<CreateAccount />}></Route>
 
             <Route element={<Layout />}>
@@ -31,6 +30,7 @@ function App() {
               <Route path='/myOrder' element={<Order />}></Route>
               <Route path='/myWishlist' element={<Wishlist />}></Route>
             </Route>
+
 
           </Routes>
 
